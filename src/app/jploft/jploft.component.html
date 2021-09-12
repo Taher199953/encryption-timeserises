@@ -1,0 +1,39 @@
+<div class="card border-success mt-3 mr-1 ml-1 mb-3">
+    <div class="card-header bg-transparent border-success">
+      <h3>JPLoft Assignment</h3>
+    </div>
+    <div class="container">
+      <div class="row mt-2 mb-2 ">
+        <div class="col-2"></div>
+            
+        <div class="col-8">
+  
+          <p-table [value]="data" 
+           styleClass="p-datatable-gridlines p-datatable-responsive-demo"
+           >
+  
+            <ng-template pTemplate="header">
+              <tr>
+                <!-- <th class="header" scope="col">#</th> -->
+                <th class="header" scope="col">Name</th>
+                <th class="header" scope="col">Category</th>
+                <th class="header" scope="col">Quantity</th>
+              </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-e let-index="rowIndex">
+              <tr >
+                <!-- <th scope="row">{{i+1}}</th> -->
+                
+                <td>{{e?.name}}</td>
+                <td>{{e?.category }}</td>
+                <td>{{e?.quantity}}</td>
+              </tr>
+            </ng-template>
+  
+          </p-table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p-toast key="myKey1"></p-toast>

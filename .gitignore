@@ -1,0 +1,11 @@
+node_modules/
+package-lock.json
+ecosystem.config.js
+gateway-api/node_modules/
+ecosystem.config.js
+service-admin-auth/node_modules/
+service-admin-auth/public/images/
+service-admin-auth/package-lock.json
+
+service-mobile-api/node_modules/
+service-mobile-api/package-lock.json

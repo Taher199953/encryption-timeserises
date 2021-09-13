@@ -32,15 +32,13 @@
     };
     ws.onmessage = function(e) {
       let data = JSON.parse(e.data);
-      console.log(data.length)
-      console.log(data instanceof Array)
+     
       if(data && data instanceof Array){
         
         var tbody = '';
         var tableBody = document.getElementById("tableRow");
 
         for (const [i,iterator] of data.entries()) {
-            console.log(iterator?.name)
                 let sum = +i+1
                 tbody +=  "<tr> <td class='td col1'>" + sum +" </td> ";
                 tbody +=  "<td class='td col'>" + iterator?.name +" </td> ";
